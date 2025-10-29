@@ -5,7 +5,7 @@ function adicionarTarefa() {
     let inputTarefa = document.getElementById("inputTarefa");
     
     /*Pra ver o inputTarefa no console é só usar o console.log(inputTarefa)
-    Esse comando retornará toda a tag do input, porém com o .value a gente pega apenas o valor que o usuário digitou nela.*/
+    Esse comando retornará toda a tag do input, porém com o .value a gente pega apenas o valor que o usuário digitou nela*/
     
     //Obtendo o valor da tarefa
     let tarefa = inputTarefa.value;
