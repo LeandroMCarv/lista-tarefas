@@ -1,4 +1,7 @@
 function adicionarTarefa() {
+
+    let tarefas = [];
+
     let mensagem = "Tarefa adicionada com sucesso!";
     
     //Obtendo o input da tarefa
@@ -18,15 +21,26 @@ function adicionarTarefa() {
     }else{ 
         document.getElementById("mensagem").textContent = mensagem;
         
-        let listaTarefas = document.getElementById("listaTarefas");
-        let novaTarefa = document.createElement("li");
+        tarefas.push(tarefa);
         
+        renderizarTarefas(tarefas);
+        
+    }
+    //Resetando o campo da tarefa quando se dá a entrada
+    inputTarefa.value = "";
+
+}
+
+function renderizarTarefas(tarefas) {
+    const listaTarefas = document.getElementById("listaTarefas");
+    
+    
+    let i = 0;
+    for(i; i < tarefas.length; i++){
+        let novaTarefa = document.createElement("li");
         //Inserindo informações da tarefa dentro da li
-        novaTarefa.textContent = tarefa;
+        novaTarefa.textContent = tarefas[i];
         //A ul está dentro de listaTarefas, então com o comando append, nós adicionamos a li dentro da ul
         listaTarefas.appendChild(novaTarefa);
-        
-        //Resetando o campo da tarefa quando se dá a entrada
-        inputTarefa.value = "";
-    }       
+    }
 }
