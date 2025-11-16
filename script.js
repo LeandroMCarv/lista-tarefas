@@ -40,6 +40,12 @@ function renderizarTarefas(tarefas) {
         let novaTarefa = document.createElement("li");
         //Inserindo informações da tarefa dentro da li
         novaTarefa.textContent = tarefas[i];
+        
+        let botaoRemover = document.createElement("button");
+        botaoRemover.className = "remover";
+        botaoRemover.textContent = "Remover";
+
+        novaTarefa.appendChild(botaoRemover);
         //A ul está dentro de listaTarefas, então com o comando append, nós adicionamos a li dentro da ul
         listaTarefas.appendChild(novaTarefa);
     }
