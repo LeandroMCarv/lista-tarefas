@@ -1,7 +1,6 @@
+let tarefas = [];
+
 function adicionarTarefa() {
-
-    let tarefas = [];
-
     let mensagem = "Tarefa adicionada com sucesso!";
     
     //Obtendo o input da tarefa
@@ -23,7 +22,7 @@ function adicionarTarefa() {
         
         tarefas.push(tarefa);
         
-        renderizarTarefas(tarefas);
+        renderizarTarefas();
         
     }
     //Resetando o campo da tarefa quando se dá a entrada
@@ -31,12 +30,13 @@ function adicionarTarefa() {
 
 }
 
-function renderizarTarefas(tarefas) {
+function renderizarTarefas() {
     const listaTarefas = document.getElementById("listaTarefas");
-    
-    
-    let i = 0;
-    for(i; i < tarefas.length; i++){
+
+    //Limpando a lista
+    listaTarefas.innerHTML = '';
+
+    for(let i = 0; i < tarefas.length; i++){
         let novaTarefa = document.createElement("li");
         //Inserindo informações da tarefa dentro da li
         novaTarefa.textContent = tarefas[i];
@@ -44,9 +44,16 @@ function renderizarTarefas(tarefas) {
         let botaoRemover = document.createElement("button");
         botaoRemover.className = "remover";
         botaoRemover.textContent = "Remover";
+        botaoRemover.onclick = () => removerTarefa(i);//equivale à botaoRemover.onclick = function() {}
+        
 
         novaTarefa.appendChild(botaoRemover);
         //A ul está dentro de listaTarefas, então com o comando append, nós adicionamos a li dentro da ul
         listaTarefas.appendChild(novaTarefa);
     }
+}
+
+function removerTarefa(i) {
+    tarefas.splice(i,1);
+    renderizarTarefas();
 }
