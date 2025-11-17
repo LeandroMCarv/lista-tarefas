@@ -46,9 +46,14 @@ function renderizarTarefas() {
         botaoRemover.textContent = "Remover";
         botaoRemover.onclick = () => removerTarefa(i);//equivale à botaoRemover.onclick = function() {}
         
+        let botaoEditar = document.createElement("button");
+        botaoEditar.className = "editar";
+        botaoEditar.textContent = "Editar";
+        botaoEditar.onclick = () => editarTarefa(i);
 
-        novaTarefa.appendChild(botaoRemover);
         //A ul está dentro de listaTarefas, então com o comando append, nós adicionamos a li dentro da ul
+        novaTarefa.appendChild(botaoRemover);
+        novaTarefa.appendChild(botaoEditar);
         listaTarefas.appendChild(novaTarefa);
     }
 }
@@ -56,4 +61,12 @@ function renderizarTarefas() {
 function removerTarefa(i) {
     tarefas.splice(i,1);
     renderizarTarefas();
+}
+
+function editarTarefa(i){
+    let tarefaEditada = prompt("Edite a tarefa:");
+    if (tarefaEditada.trim() !== "") {
+        tarefas[i] = tarefaEditada;
+        renderizarTarefas();
+    }
 }
