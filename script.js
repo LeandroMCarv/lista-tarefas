@@ -70,3 +70,13 @@ function editarTarefa(i){
         renderizarTarefas();
     }
 }
+
+function limparLista(){
+    if(tarefas.length === 0){
+        document.getElementById("mensagem").textContent = "A lista já está vazia!";
+        return;
+    }
+    tarefas.length = 0;
+    renderizarTarefas();
+    mensagem.textContent = "Lista de tarefas limpa!";
+}
