@@ -1,10 +1,10 @@
-#📋 Lista de Tarefas
+# 📋 Lista de Tarefas
 
 Projeto simples de Lista de Tarefas (To-Do List) desenvolvido em HTML, CSS e JavaScript, com foco na prática de manipulação do DOM, lógica de programação e organização básica de um projeto front-end.
 
 ---
 
-##📌 Sobre o Projeto
+## 📌 Sobre o Projeto
 
 Esta aplicação permite que o usuário organize tarefas do dia a dia diretamente no navegador.
 
@@ -28,7 +28,7 @@ O projeto foi desenvolvido com fins educacionais, aplicando conceitos fundamenta
 
 ---
 
-##🗂️ Estrutura do Projeto
+## 🗂️ Estrutura do Projeto
 
 ```
 lista-tarefas/
@@ -39,7 +39,7 @@ lista-tarefas/
 
 ---
 
-##🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 -HTML5 — Estrutura da aplicação
 
@@ -49,7 +49,7 @@ lista-tarefas/
 
 ---
 
-##✨ Funcionalidades
+## ✨ Funcionalidades
 
 ✔️ Adição de tarefas com validação de campo vazio
 ✔️ Renderização dinâmica da lista de tarefas
@@ -60,7 +60,7 @@ lista-tarefas/
 
 ---
 
-##🚀 Como Executar o Projeto
+## 🚀 Como Executar o Projeto
 
 Clone o repositório:
 
@@ -73,7 +73,7 @@ Não é necessário instalar dependências ou rodar servidor.
 
 ---
 
-##💡 Conceitos Praticados
+## 💡 Conceitos Praticados
 
 -Manipulação do DOM (createElement, appendChild, innerHTML)
 
@@ -87,13 +87,13 @@ Não é necessário instalar dependências ou rodar servidor.
 
 ---
 
-##📄 Licença
+## 📄 Licença
 
 Projeto desenvolvido para fins educacionais.
 Sinta-se à vontade para estudar, modificar e reutilizar o código.
 
 ---
 
-##👨‍💻 Autor
+## 👨‍💻 Autor
 
 @LeandroMCarv
