@@ -12,7 +12,7 @@ O projeto foi desenvolvido com fins educacionais, aplicando conceitos fundamenta
 
 ---
 
-##Funcionalidades principais:
+## Funcionalidades principais:
 
 -Adicionar tarefas
 
